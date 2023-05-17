@@ -19,8 +19,8 @@
 					<li><a href="#top">Top</a></li>
 					<li><a href="#overview">Overview</a></li>
 					<li><a href="#problem">Problem Formulation</a></li>
-					<li><a href="#data">Data</a></li>
-					<li><a href="#methods">Methods</a></li>
+					<li><a href="#data">Data Collection</a></li>
+					<li><a href="#methods">Data Exploration</a></li>
 					<li><a href="#results">Results</a></li>
 					<li><a href="#team">Team</a></li>
 				</ul>
@@ -117,8 +117,8 @@
 				</div>
 			</article>
 
-		<!-- Data -->
-			<article id="Data Collection" class="wrapper style2">
+		<!-- Data Collection -->
+			<article id="data" class="wrapper style2">
 				<div class="container">
 					<header>
 						<h2>We mined the internet for fake news data.</h2>
@@ -140,7 +140,13 @@
 						<div class="col-12">
 							<section class="box style1">
 								<h3>Data Selection Criteria</h3>
-								<p>Our collection criterias include ...</p>
+								<p>The data collected are fact-checkable and not mere opinions. They adhere to the following standards: <br>
+<b>Is it a statement of fact? </b><br>
+<b>Is it relevant?</b><br>
+<b>Is it feasible to verify using reliable sources?</b><br>
+
+
+In order to gather tweets on the subject, we looked into the topic of "EDSA revolution legitimacy and the alleged downfall of the Philippines after it." To do this, we used keywords like "fake edsa," "EDSA revolution economy," "edsa fake revolution," and "EDSA, peke." To be considered relevant to the issue, tweets had to be posted between 2016 and 2022. Additionally, we ensured that each tweet is distinct, therefore we do not include retweets as unique tweets.</p>
 							</section>
 						</div>
 						<div class="col-12">
@@ -152,7 +158,76 @@
 						<div class="col-12">
 							<section class="box style1">
 								<h3>Data Features</h3>
-								<p>The columns contained in our dataset are the following:</p>
+								<p>These are the following data features in our dataset: <br>
+								<b>ID</b><br>
+								This column contains each unique ID for the collected tweets.<br>
+								
+								<b>Timestamp</b><br>
+								This column contains the date and time the tweet was collected.<br>
+								
+								<b>Group</b><br>
+								This column contains our group number from our CS 132 class.<br>
+								
+								<b>Category</b><br>
+								This column contains the general category of the tweets we are collecting. In our case this is “AQNO”.<br>
+
+								<b>Topic</b><br>
+								This column contains the subject of the collected tweet with mis/disinformation. <br>
+								
+								<b>Keywords</b><br>
+								This column contains the keywords we used to explore the mis/disinformation found in Twitter. <br>
+								
+								<b>Account handle</b><br>
+								This column contains the unique username of each collected tweet. It always begins with the “@” symbol. <br>
+								
+								<b>Account name</b><br>
+								This column contains the user’s account name. <br>
+								
+								<b>Account bio</b><br>
+								This column contains the user’s bio, which is a small public summary about the user’s Twitter profile picture. <br>
+								
+								<b>Account type</b><br>
+								This column refers to the user’s identity. It contains the categories “Identified” and “Anonymous”. <br>
+								
+								<b>Joined</b><br>
+								This column contains the month and year the user has joined Twitter. <br>
+								
+								<b>Following</b><br>
+								This column contains the user’s following count. <br>
+								
+								<b>Followers</b><br>
+								This column contains the user’s follower count. <br>
+								
+								<b>Location</b><br>
+								This column contains the user’s location.<br>
+								
+								<b>Tweet</b><br>
+								This column contains the tweet posted by the user.<br>
+								
+								<b>Tweet Type</b><br>
+								This  column may contain the categories “Text”, “Image”, “Video”, “URL”,  “Reply”, and  “Quote Tweet”. This column may contain more than one category.<br>
+								
+								<b>Date posted</b><br>
+								This contains the day, month, year and time the tweet was posted.<br>
+								
+								<b>Content type</b><br>
+								This  column may contain the categories “Emotional”, “Rational” and “Transactional”. This column may contain more than one category.<br>
+								
+								<b>Likes</b><br>
+								This column contains the amount of likes the tweet has garnered.<br>
+								
+								<b>Replies</b><br>
+								This column contains the amount of replies the tweet has garnered.<br>
+								
+								<b>Retweets</b><br>
+								This column contains the amount of retweets the tweet has garnered.<br>
+								
+								<b>Rating</b><br>
+								This column may contain the categories “FAKE”, “FALSE”, “MISLEADING”, “UNPROVEN”, “INACCURATE”, “NEED CONTEXT” and “FLIPFLOP”.<br>
+								
+								<b>Reasoning</b><br>
+								This column contains the reason why the tweet is classified as mis/disinformation.<br>			
+								</p>
 							</section>
 						</div>
 					</div>
@@ -166,41 +241,14 @@
 			<article id="methods" class="wrapper style1">
 				<div class="container">
 					<header>
-						<h2>Let's talk about our data science methodology.</h2>
-						<p><script src="https://gist.github.com/VDispo/5169585002c9d0c3ce3521d55e1ab9cb.js"></script></p>
+						<h2>Data Exploration</h2>
+						<p>Now let's take a look of how we processed our data from preprocessing to data visualization</p>
 					</header>
-					<div class="row">
-						<div class="col-6 col-6-medium col-12-small">
-							<article class="box style2">
-								<a href="#" class="image featured"><img src="images/pic02.jpg" alt="" /></a>
-								<h3><a href="#">Data Preprocessing</a></h3>
-								<p>Ornare nulla proin odio consequat.</p>
-							</article>
-						</div>
-						<div class="col-6 col-6-medium col-12-small">
-							<article class="box style2">
-								<a href="#" class="image featured"><img src="images/pic01.jpg" alt="" /></a>
-								<h3><a href="#">Machine Learning</a></h3>
-								<p>Ornare nulla proin odio consequat.</p>
-							</article>
-						</div>
-						<div class="col-6 col-6-medium col-12-small">
-							<article class="box style2">
-								<a href="#" class="image featured"><img src="images/pic02.jpg" alt="" /></a>
-								<h3><a href="#">Data Preprocessing</a></h3>
-								<p>Ornare nulla proin odio consequat.</p>
-							</article>
-						</div>
-						<div class="col-6 col-6-medium col-12-small">
-							<article class="box style2">
-								<a href="#" class="image featured"><img src="images/pic01.jpg" alt="" /></a>
-								<h3><a href="#">Machine Learning</a></h3>
-								<p>Ornare nulla proin odio consequat.</p>
-							</article>
-						</div>
-					</div>
+					
+					<script src="https://gist.github.com/VDispo/db97c69e82b17c913d9f61bea09a53e7.js"></script>
+					
 					<footer>
-						<p>Lorem ipsum dolor sit sapien vestibulum ipsum primis?</p>
+						<p>This embedded colab explains our data exploration methods.</p>
 					</footer>
 				</div>
 			</article>
